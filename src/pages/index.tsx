@@ -18,9 +18,10 @@ export default function Home() {
           components={[<h1 className="title" />, <a href="https://nextjs.org">Next.js!</a>]}
         />
 
-        <h2 className="description">
+        <h2>
           {t('home:description')} <code>This is the / page</code>
         </h2>
+        <h3>This is a env var {process.env.NEXT_PUBLIC_VICTOR_ID}</h3>
 
         <Grid container spacing={2}>
           <Grid item xs={6}>
